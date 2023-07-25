@@ -1,0 +1,170 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke
+}
+
+
+
+#head-container {
+    display: flex;
+    align-items: center;
+    height: 4.5vw;
+    background-color: rgb(255, 196, 0);
+}
+
+.fa-note-sticky {
+    font-size: 2.5vw;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+#heading {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+#add-note-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+
+#add-note-div {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    /* border: 1px solid red; */
+}
+
+#add-note-circle {
+    width: 20%;
+    height: 3vw;
+    margin-right: 5px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    color: white;
+}
+
+#add-note-text {
+    font-size: 1.2vw;
+    font-weight: bold;
+    /* border: 1px solid black; */
+}
+
+#all-notes-container {
+    /* border: 1px solid green; */
+    margin-top: 10px;
+
+
+}
+
+#all-notes-container:after {
+    content: " ";
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+
+
+
+/* Note CSS */
+.note-div {
+
+    float: left;
+    margin: 1vw 2.5vw;
+    width: 28vw;
+    font-size: 1vw;
+    height: 14vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: white;
+    /* border: 1px solid black; */
+
+}
+
+
+
+.edit-del-container {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+
+.edit-del-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    /* border: 1px solid green; */
+}
+
+.edit-circle {
+    width: 35%;
+    height: 2.5vw;
+    background-color: green;
+    border-radius: 50px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3vw;
+    color: white;
+}
+
+.del-circle {
+    width: 35%;
+    height: 2.5vw;
+    background-color: red;
+    border-radius: 50px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3vw;
+    color: white;
+}
+
+
+.inputText {
+    margin-top: 10px;
+    width: 19.2vw;
+    border: none;
+    background-color: white;
+    height: 9vw;
+    outline: 0px;
+    resize: none;
+    overflow-y: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 1px solid black; */
+    font-size: 1.2vw;
+
+}
+
+
+@media screen and (max-width:760px) {
+    
+   .note-div{
+    width: 45vw;
+    height: 20vw;
+   }
+}
+
+@media screen and (max-width:420px) {
+    
+    .note-div{
+     width: 90vw;
+     height: 30vw;
+    }
+ }
